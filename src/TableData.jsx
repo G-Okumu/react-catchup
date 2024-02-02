@@ -30,8 +30,8 @@ export default function TableData({ id, name, age, location }) {
       </th>
       <td className="px-6 py-4 bg-gray-800 text-white">{age}</td>
       <td className="px-6 py-4 bg-gray-800 text-white">{location}</td>
-      <td className="px-6 py-4 bg-gray-800 text-red-500" onClick={() => handleDelete(id)}>
-        DELETE
+      <td className="px-6 py-4 bg-gray-800 text-red-500">
+        <button className="bg-red-600 text-white p-1.5 rounded-lg hover:bg-red-300"  onClick={() => handleDelete(id)}>DELETE</button>
       </td>
     </>
   );

@@ -1,4 +1,6 @@
-# React + Vite
+# React + Vite + Tailwind css
+
+![The demo](/src/assets/demo.png)
 
 ## Topics
 
@@ -8,5 +10,7 @@
 <li>useState</li>
 <li>useEffect</li>
 </ul>
+
+
 
 

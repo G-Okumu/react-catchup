@@ -1,22 +1,22 @@
 {
-    "animals": [
-        {
-            "id": 1,
-            "name": "Leopard",
-            "age": 23,
-            "location": "N.N.P"
+  "animals": [
+    {
+      "id": 1,
+      "name": "Lion",
+      "age": 17,
+      "location": "Tsavo West"
     },
     {
-        "id": 2,
-        "name": "Lion",
-        "age": 24,
-        "location": "Massai Mara"
-},
-{
-    "id": 3,
-    "name": "Zebra",
-    "age": 13,
-    "location": "Tsavo East"
-}
-    ]
+      "id": 2,
+      "name": "Zebra",
+      "age": 13,
+      "location": "Tsavo East"
+    },
+    {
+      "id": 3,
+      "name": "Hyena",
+      "age": 10,
+      "location": "Massai Mara"
+    }
+  ]
 }

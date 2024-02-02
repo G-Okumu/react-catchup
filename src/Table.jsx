@@ -25,7 +25,7 @@ export default function Table({ allAnimalList }) {
             {allAnimalList.length ? (
               allAnimalList.map((animal) => (
                 <tr key={animal.name}>
-                  <TableData name={animal.name} age={animal.age} location={animal.location} />
+                  <TableData id={animal.id} name={animal.name} age={animal.age} location={animal.location} />
                 </tr>
               ))
             ) : (

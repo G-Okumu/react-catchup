@@ -1,16 +1,19 @@
 {
     "animals": [
         {
+            "id": 1,
             "name": "Leopard",
             "age": 23,
             "location": "N.N.P"
     },
     {
+        "id": 2,
         "name": "Lion",
         "age": 24,
         "location": "Massai Mara"
 },
 {
+    "id": 3,
     "name": "Zebra",
     "age": 13,
     "location": "Tsavo East"

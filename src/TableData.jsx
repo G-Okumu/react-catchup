@@ -1,4 +1,13 @@
 export default function TableData({ id, name, age, location }) {
+  /**
+   *
+   * @param {id}
+   *
+   * fn @handleDelete deletes an item by communicating with the server
+   *
+   * Rem here, we dont use useEffect hook bcoz, deleting doesnt cause any side effects to the program
+   *
+   */
   function handleDelete(id) {
     let confirmed = confirm(`Are you sure you want to delete ${name}?`);
 

@@ -10,9 +10,6 @@ export default function Table({ allAnimalList }) {
               <th scope="col" className="px-6 py-3 bg-gray-50">
                 Animal name
               </th>
-              <th scope="col" className="px-6 py-3">
-                Age
-              </th>
               <th scope="col" className="px-6 py-3 bg-gray-50">
                 Location
               </th>
@@ -24,8 +21,8 @@ export default function Table({ allAnimalList }) {
           <tbody>
             {allAnimalList.length ? (
               allAnimalList.map((animal) => (
-                <tr key={animal.name}>
-                  <TableData id={animal.id} name={animal.name} age={animal.age} location={animal.location} />
+                <tr key={animal.id}>
+                  <TableData animal={animal} />
                 </tr>
               ))
             ) : (
@@ -38,7 +35,6 @@ export default function Table({ allAnimalList }) {
                 <td className="px-6 py-4 bg-gray-800 text-white"></td>
                 <td className="px-6 py-4 bg-gray-800 text-white"></td>
                 <td className="px-6 py-4 bg-gray-800 text-white"></td>
-
               </tr>
             )}
           </tbody>

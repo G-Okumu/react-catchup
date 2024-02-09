@@ -7,9 +7,9 @@ export default function AnimalList() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:3000/animals")
+    fetch("https://api.npoint.io/af830bf6c18519f60274")
       .then((response) => response.json())
-      .then((data) => setAnimal(data));
+      .then((data) => setAnimal(data.animals));
   }, []);
 
   // This function will be resposible to manage communication btn child and parent

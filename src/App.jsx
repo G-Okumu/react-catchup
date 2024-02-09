@@ -1,38 +1,26 @@
 import AnimalList from "./AnimalList";
-import { useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NotFound from "./NotFound";
+import TopNav from "./TopNav";
 import NewAnimal from "./NewAnimal";
+import AnimalDetail from "./AnimalDetail";
 
 function App() {
-  // const [name, setName] = useState("Lion");
-  // const [count, setCount] = useState(0);
-
-  // function increase() {
-  //   setCount(count + 1);
-  // }
-
-  // console.log("one");
-
-  // useEffect(() => {
-  //   console.log("two");
-  // }, [count]);
-
-  // console.log("three");
-
   return (
     <>
-      <h1>Animal Tracker</h1>
+      <BrowserRouter>
+        <TopNav />
 
-      {/* <p>Animal count {count}</p>
+        <Routes>
+          <Route path="/" element={<AnimalList />} />
 
-      <button onClick={increase}>increase animal count</button>
+          {/* The below code takes you to Animal Detail and opens a new page */}
+          <Route path="animal/:id" element={<AnimalDetail />} />
 
-      <ul>
-        <li>{name}</li>
-      </ul>
-
-      <input value={name} onChange={(e) => setName(e.target.value)} /> */}
-
-      <AnimalList />
+          <Route path="/newanimal" element={<NewAnimal />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

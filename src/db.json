@@ -1,19 +1,28 @@
 {
-    "animals": [
-        {
-            "name": "Leopard",
-            "age": 23,
-            "location": "N.N.P"
+  "animals": [
+    {
+      "id": 1,
+      "name": "Lion",
+      "age": 17,
+      "location": "Tsavo West",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFw0Tu56CpyO9h_g2Dj50Lu4jJ-ZI3aHNWwxB6IiwjYuShvqq3",
+      "description": "The lion (Panthera leo) is a large cat of the genus Panthera, native to Africa and India. It has a muscular, broad-chested body; a short, rounded head;"
     },
     {
-        "name": "Lion",
-        "age": 24,
-        "location": "Massai Mara"
-},
-{
-    "name": "Zebra",
-    "age": 13,
-    "location": "Tsavo East"
-}
-    ]
+      "id": 2,
+      "name": "Zebra",
+      "age": 13,
+      "location": "Tsavo East",
+      "image": "https://nationaltoday.com/wp-content/uploads/2022/02/International-Zebra-Day.jpg",
+      "description": "Zebras (subgenus Hippotigris) are African equines with distinctive black-and-white striped coats."
+    },
+    {
+      "id": 3,
+      "name": "Elephant",
+      "age": 20,
+      "location": "Massai Mara",
+      "image": "https://cdn.britannica.com/02/152302-050-1A984FCB/African-savanna-elephant.jpg",
+      "description": "Elephants are the largest living land animals. Three living species are currently recognised: the African bush elephant (Loxodonta africana), "
+    }
+  ]
 }
